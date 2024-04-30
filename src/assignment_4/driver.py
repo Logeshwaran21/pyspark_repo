@@ -3,7 +3,7 @@ from pyspark_repo.src.assignment_4.util import *
 
 def main():
     # Path to JSON file
-    json_path = r'C:\Users\SathyaPriyaR\Desktop\pyspark_ass\pyspark_repo\resources\nested_json_file (2).json'
+    json_path = r'C:\Users\Logeshwaran A\Desktop\pyspark_repo\pyspark_repo\resources\nested_json_file (2).json'
 
     spark = spark_session()
 

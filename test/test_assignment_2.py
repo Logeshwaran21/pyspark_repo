@@ -10,9 +10,7 @@ class TestCreditCardDataFrame(unittest.TestCase):
         # Create a SparkSession for testing df
         cls.spark = SparkSession.builder.appName("TestCreditCardDataFrame").getOrCreate()
     @classmethod
-    def tearDownClass(cls):
-        # Stop the SparkSession after all tests are executed
-        cls.spark.stop()
+
 
     def test_create_credit_card_dataframe(self):
         data = [("1234567891234567",),
@@ -73,7 +71,7 @@ class TestCreditCardDataFrame(unittest.TestCase):
                 ("5678912345671234",),
                 ("9123456712345678",),
                 ("1234567812341122",),
-                ("1234567812341342"c,)]
+                ("1234567812341342",)]
 
         expected_partitions = 1
 
